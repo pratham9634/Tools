@@ -22,7 +22,7 @@ const Navbar = () => {
             Home
           </a>
           <a
-            href="https://github.com/your-repo"
+            href="https://github.com/pratham9634"
             target="_blank"
             className="text-white/90 hover:text-yellow-300 transition font-medium"
           >
