@@ -7,10 +7,6 @@ import { Menu, X } from 'lucide-react';
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const handleRefresh = (e) => {
-    e.preventDefault();
-    window.location.reload(); // Soft reload
-  };
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
@@ -23,7 +19,6 @@ const Navbar = () => {
         <nav className="space-x-8 hidden md:flex">
           <Link
             href="/"
-            onClick={handleRefresh}
             className="text-white/90 hover:text-yellow-300 transition font-medium"
           >
             Home
