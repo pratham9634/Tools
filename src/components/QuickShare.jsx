@@ -58,8 +58,6 @@ const QuickShare = () => {
       🔐 Quick File Share
     </h1>
 
-   
-
     {/* File Upload Section */}
     <div className="flex flex-col gap-4 items-center">
       <StyledWrapper>
@@ -124,14 +122,16 @@ const QuickShare = () => {
         </div>
       </div>
     )}
-     {/* Note Section */}
-     <p className="text-sm text-yellow-200 bg-yellow-800/20 border border-yellow-400/40 p-3 rounded-lg shadow-sm">
+
+    {/* Note Section */}
+    <p className="text-sm text-yellow-200 bg-yellow-800/20 border border-yellow-400/40 p-3 rounded-lg shadow-sm">
       ⚠️ Currently supports <span className="font-semibold">image</span> and <span className="font-semibold">video</span> files only.<br />
-      Other file types (e.g. PDFs, ZIPs) will be supported <span className="italic">very soon!</span>
+      Other file types (e.g. PDFs, ZIPs) will be supported <span className="italic">very soon</span>.<br />
+      ⏳ <span className="font-medium">Note:</span> The download link is valid for <span className="font-semibold">10 minutes</span> only.
     </p>
   </div>
-  
 </div>
+
 
 
   )
