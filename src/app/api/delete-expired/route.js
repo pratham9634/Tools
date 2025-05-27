@@ -4,7 +4,7 @@ import File from '@/models/File'
 import cloudinary from '@/lib/cloudinary'
 import dbConnect from '@/lib/mongodb'
 
-export const GET = async () => {
+export const GET = async (req) => {
   if (req.headers.get('Authorization') !== `Bearer ${process.env.CRON_SECRET}`) {
     return res.status(401).end('Unauthorized');
   }
